@@ -65,7 +65,7 @@ public class ProjectListDialog extends TitleAreaDialog {
 
 		// URL
 		Label urlLabel = new Label(container, SWT.NONE);
-		urlLabel.setText("URL:");
+		urlLabel.setText("Server IP/Hostname[include http(s) and port]:");
 		urlLabel.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
 
 		urlText = new Text(container, SWT.BORDER);

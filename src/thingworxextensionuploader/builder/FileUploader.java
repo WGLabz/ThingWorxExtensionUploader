@@ -44,7 +44,7 @@ public class FileUploader {
 				CloseableHttpClient httpClient = HttpClients.createDefault()) {
 
 			// Create HTTP POST request
-			HttpPost uploadFile = new HttpPost(url);
+			HttpPost uploadFile = new HttpPost(url+"/Thingworx/ExtensionPackageUploader");
 			uploadFile.setHeader("appKey", appKey);
 			uploadFile.setHeader("Accept", "application/json");
 			uploadFile.setHeader("X-XSRF-TOKEN", "TWX-XSRF-TOKEN-VALUE");
