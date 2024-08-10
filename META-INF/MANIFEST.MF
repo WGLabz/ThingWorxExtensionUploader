@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ThingWorxExtensionUploader
+Bundle-SymbolicName: ThingWorxExtensionUploader;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.ui,
+ org.apache.ant,org.jdom2,org.apache.httpcomponents.httpclient,
+ org.eclipse.core.resources;bundle-version="3.20.200",
+ org.eclipse.core.runtime;bundle-version="3.31.100",
+ org.eclipse.ui.console;bundle-version="3.14.100",
+ org.eclipse.jface.text;bundle-version="3.25.100",
+ org.eclipse.wst.xml.core;bundle-version="1.2.900",
+ org.eclipse.wst.common.core;bundle-version="1.4.100"
+Automatic-Module-Name: ThingWorxExtensionUploader
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Import-Package: org.apache.http,org.apache.http.client.methods;version="[4.5,5)",org.apache.http.client,org.apache.http.entity,org.eclipse.core.runtime;resolution:=optional
