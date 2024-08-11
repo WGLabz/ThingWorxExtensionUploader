@@ -13,7 +13,16 @@
 <br/>
 <br/>
 
-## How to Use?
+## Features
+
+> If you are using this plugin, make sure your project is set to build with Ant, not Gradle. Gradle is not supported yet. Additionally, the default build file name `build-extension.xml` should not be changed.
+
+* The plugin automatically increments the patch version of the extension with each run. For example, if the current version is `1.0.8`, it will increment to `1.0.9`. This is essential because ThingWorx only allows the import of incremental versions of any extension. 
+```If you want to update the major or minor version, need to do it manually.```
+* The plugin executes the build file and generates a `.zip` distribution of the extension.
+* It then uploads the extension to a configured ThingWorx server using HTTP REST APIs. An Admin-level APP Key is required for this process.
+
+## How to Use
 
 <br/>
 
@@ -39,7 +48,7 @@ If everything goes well when you click "OK", you will receive a success message,
 
 <p align="center"><img src=".assets/5.png" alt="ThingWorx Extension Uploader Success" width="400" /></p>
 
-## How to Build?
+## How to Build
 
 To be continued...
 
